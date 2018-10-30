@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Jay sckript and the Domsters</title>
+	<link rel="stylesheet" type="text/css" href="styles/basic.css"/>
+</head>
+<body>
+<!-- 头部开始-->
+<header>
+	<!--头部上半部分-->
+	<img src="images/logo.gif"/>
+	<!--头部下半部分-->
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">about</a></li>
+			<li><a href="photos.html">photo</a></li>
+			<li><a href="live.html">live</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul>
+	</nav>
+</header>
+<!--内容-->
+<article>
+	<h1>Contact the  band data</h1>
+	<form action="submit.html" method="get">
+		<fieldset>
+			<p>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="your name" required="required"/>
+			</p>
+			<p>
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email"  required="required" placeholder="your email"/>
+			</p>
+			<p>
+				<label for="message">Message:</label>
+				<textarea name="message" rows="7" cols="45" id="message" placeholder="your message" ></textarea>
+			</p>
+			<input type="submit" value="Send" />
+		</fieldset>
+	</form>
+</article>
+<script src="scripts/global.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

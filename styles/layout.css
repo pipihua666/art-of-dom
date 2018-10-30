@@ -1,0 +1,110 @@
+section, header, article, nav{
+	display: block;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+	margin: 1em 10%;
+	background-image: url(../images/background.gif);
+	background-attachment: fixed;
+	background-position: top left;
+	background-repeat:repeat-x ;
+	max-width: 80em;
+}
+header{
+	background-image: url(../images/guitarist.gif);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	border-width: .1em;
+	border-style: solid;
+	border-bottom-width: 0;
+}
+/*-------------------头部背景图片更换--------------------*/
+#about header{
+	background-image: url(../images/lineup.gif);
+}
+#photos header{
+	background-image: url("../images/basshead.PNG");
+}
+#live header{
+	background-image: url("../images/bassist.PNG");
+}
+#contact header{
+	background-image: url("../images/drummer.PNG");
+}
+header nav{
+	background-image: url(../images/navbar.gif);
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	border-width: .1em;
+	border-style: solid;
+	border-bottom: 0;
+	border-top: 0;
+	padding-left: 10%;
+}
+header nav ul{
+	width: 100%;
+	overflow: hidden;
+	border-left-width: .1em;
+	border-left-style: solid;
+}
+header nav li{
+	display: inline;
+}
+header nav li a {
+	display: block;
+	float: left;padding: .5em 2em;
+	border-right: .1em solid;
+}
+article{
+	border-width: .1em;
+	border-style: solid;
+	border-top-width:0 ;
+	padding: 2em 10%;
+	line-height: 1.8em;
+}
+article img{
+	border-width: .1em;
+	border-style: solid;
+	outline-width: .1em;
+	outline-style: solid;
+}
+/*-------------------幻灯片样式表----------------------------*/
+#slideShow{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	overflow: hidden;
+}
+#preview{
+	position: absolute;
+	border-width: 0;
+	outline-width:0;
+}
+/*---------------------------幻灯片的相框----------------------------------*/
+#frame{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+#imagegallery li{
+	display: inline;
+}
+
+/* -----------------table---------------*/
+dl{
+	overflow: hidden;
+}
+dt,dd{
+	float: left;
+}
+/*-------------------contact-----------------*/
+label{
+	display: block;
+}
+fieldset{
+	border: 0;
+}
